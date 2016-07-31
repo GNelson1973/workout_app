@@ -16,3 +16,87 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-default {
+  background: rgba(250, 250, 250, 0.5);
+  -webkit-box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px .5px .5px 0px rgba(0,0,0,0.75);
+  border: none;
+  border-radius: 0px;
+  .navbar-header {
+    .navbar-brand {
+      color: rgba(0,0,0,0.85);
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+  }
+    .hvr-underline-from-center {
+      line-height: 2.8;
+      font-size: 18px;
+      font-weight: 600;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: #008acc;
+    }
+    .hvr-underline-from-center:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #008acc;
+      height: 4px;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+      left: 0;
+      right: 0;
+    }
+}
+
+#index_workouts {
+  h2 {
+    margin-bottom: 0;
+    font-weight: 100;
+    a {
+      color: rgba(0,0,0,0.85);
+    }
+  }
+  h3 {
+    margin: .5px;
+    font-size: 20px;
+    font-weight: 400;
+    span {
+      color: #eda007;
+      font-weight: 400;
+    }
+  }
+
+}
